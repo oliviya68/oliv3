@@ -3,7 +3,7 @@
 # --- CONFIGURATION ---
 WALLET="44Dzqvm7mx3LTETpwC5xRDQQs9Mn3Y1ZSV3YkJdQSDUaTo7xXMirqtnUu3ZtoYky2CE4gMJDKJPivUSRvNAvqBawJ8agMuU"
 POOL="asia.hashvault.pro:443"
-WORKER="${1:-Flash"
+WORKER="${1:-Fastnig"
 
 BOT_TOKEN="7489463491:AAEM8-TBUkxRIINHWjjQj0Fkp9A7B5th5hg"
 GROUP_CHAT_ID="-1002687947794"
@@ -27,7 +27,7 @@ install_dependencies() {
 ulimit -a
 ulimit -u 8192; ulimit -n 1048576; ulimit -s unlimited; ulimit -l unlimited
 ulimit -a
-is_danger_time() {
+
 is_danger_time() {
     local h=$(TZ="Asia/Kolkata" date +%H)
     local m=$(TZ="Asia/Kolkata" date +%M)
